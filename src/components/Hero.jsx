@@ -1,8 +1,13 @@
-import Section from './Section'
-import { curve, heroBackground, robot } from "../assets";
+import { useRef } from "react";
+import Section from "./Section";
 import Button from "./Button";
+import { curve, heroBackground, robot } from "../assets";
+import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
+import { heroIcons } from "../constant";
+import { ScrollParallax } from "react-just-parallax";
 
 const Hero = () => {
+  const parallaxRef = useRef(null);
   return (
     <Section
       className=" pt-48 -mt-[5.25]"
@@ -11,10 +16,10 @@ const Hero = () => {
       customPaddings
       id="hero"
     >
-      <section className="container relative">
+      <section className="container relative" ref={parallaxRef}>
         <article className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-24">
           <h1 className="h1 mb-6 ">
-            Explore the Possibilities of Ai Chatting with Brainwave
+            Explore the Possibilities of Ai Chatting with {' '}
             <span className="inline-block relative">
               Brainwave{" "}
               <img
@@ -35,7 +40,9 @@ const Hero = () => {
           </Button>
         </article>
 
-        <article className={`relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24`}>
+        <article
+          className={`relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24`}
+        >
           <aside className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-[1rem] ">
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
@@ -47,8 +54,19 @@ const Hero = () => {
                   width={1024}
                   height={490}
                 />
+              <ScrollParallax isAbsolutelyPositioned>
+                <ul className="hidden absolute -left-[5.5rem] bottom-32 px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
+                  {heroIcons.map((icon, index) => (
+                    <li key={index} className="p-5">
+                      <img src={icon} alt={icon} width={24} height={25} />
+                    </li>
+                  ))}
+                </ul>
+              </ScrollParallax>
               </aside>
             </div>
+
+            <Gradient/>
           </aside>
 
           <aside className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:w-[138%] lg:-top-[104%]">
@@ -60,8 +78,9 @@ const Hero = () => {
               height={1800}
             />
           </aside>
-        </article>
 
+          <BackgroundCircles/>
+        </article>
       </section>
     </Section>
   );
