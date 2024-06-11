@@ -41,6 +41,7 @@ export const HamburgerMenu = () => {
         />
       </div>
 
+ {/* background */}
       <Rings />
 
       <SideLines />
