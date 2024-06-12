@@ -7,9 +7,9 @@ import { benefits } from "../constant";
 import { GradientLight } from "./design/Benefits";
 // assets
 import Arrow from "../assets/svg/Arrow";
-import ClipPath from "../assets/svg/ClipPath"
+import ClipPath from "../assets/svg/ClipPath";
 
-const Beneficts = () => {
+const Benefits = () => {
   return (
     <Section id="features">
       <div className="container relative z-2">
@@ -24,9 +24,9 @@ const Beneficts = () => {
               style={{ backgroundImage: `url(${item.backgroundUrl})` }}
               key={item.id}
             >
-              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-                <h5 className="h2 mb-5">{item.title}</h5>
-                <p className="body-2 mb-6 text-n-3">{item.text}</p>
+              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] ">
+                <h5 className="h5 mb-5 pointer-events-none">{item.title}</h5>
+                <p className="body-2 mb-6 text-n-3 pointer-events-none">{item.text}</p>
                 <div className="flex items-center mt-auto">
                   <img
                     src={item.iconUrl}
@@ -34,10 +34,9 @@ const Beneficts = () => {
                     height={48}
                     alt={item.title}
                   />
-                  <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
-                    explore more
-                  </p>
-                  <Arrow />
+                  <button className="flex items-center ml-auto font-code text-sm font-bold text-n-1 uppercase tracking-wider">
+                    explore more <Arrow />
+                  </button>
                 </div>
               </div>
 
@@ -58,7 +57,7 @@ const Beneficts = () => {
                   )}
                 </div>
               </div>
-              <ClipPath/>
+              <ClipPath />
             </article>
           ))}
         </div>
@@ -67,4 +66,4 @@ const Beneficts = () => {
   );
 };
 
-export default Beneficts;
+export default Benefits;
