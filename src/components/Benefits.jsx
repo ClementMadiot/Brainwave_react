@@ -7,7 +7,7 @@ import { benefits } from "../constant";
 import { GradientLight } from "./design/Benefits";
 // assets
 import Arrow from "../assets/svg/Arrow";
-import ClipPath from "../assets/svg/ClipPath";
+import ClipPath from "../assets/svg/ClipPath"
 
 const Benefits = () => {
   return (
@@ -24,9 +24,9 @@ const Benefits = () => {
               style={{ backgroundImage: `url(${item.backgroundUrl})` }}
               key={item.id}
             >
-              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] ">
-                <h5 className="h5 mb-5 pointer-events-none">{item.title}</h5>
-                <p className="body-2 mb-6 text-n-3 pointer-events-none">{item.text}</p>
+              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
+                <h5 className="h5 mb-5">{item.title}</h5>
+                <p className="body-2 mb-6 text-n-3">{item.text}</p>
                 <div className="flex items-center mt-auto">
                   <img
                     src={item.iconUrl}
@@ -34,9 +34,7 @@ const Benefits = () => {
                     height={48}
                     alt={item.title}
                   />
-                  <button className="flex items-center ml-auto font-code text-sm font-bold text-n-1 uppercase tracking-wider">
-                    explore more <Arrow />
-                  </button>
+                  <button className="flex items-center ml-auto font-code text-sm font-bold text-n-1 uppercase tracking-wider pointer-events-auto ">explore more <Arrow /></button>
                 </div>
               </div>
 
@@ -46,7 +44,7 @@ const Benefits = () => {
                 className="absolute inset-0.5 bg-n-8"
                 style={{ clipPath: "url(#benefits)" }}
               >
-                <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
+                <div className="absolute inset-0 opacity-[0.02] transition-opacity hover:opacity-10">
                   {item.imageUrl && (
                     <img
                       src={item.imageUrl}
@@ -57,7 +55,7 @@ const Benefits = () => {
                   )}
                 </div>
               </div>
-              <ClipPath />
+              <ClipPath/>
             </article>
           ))}
         </div>
