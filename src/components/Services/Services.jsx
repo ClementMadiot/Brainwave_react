@@ -21,7 +21,7 @@ const Services = () => {
           <SeCardSmartestAI classesCard={classesCard} />
 
           <article className="relative z-1 grid gap-5 lg:grid-cols-2">
-            <SeCardEditing/>
+            <SeCardEditing classesCard={classesCard}/>
             <SeCardVideo/>
           </article>
         </div>
