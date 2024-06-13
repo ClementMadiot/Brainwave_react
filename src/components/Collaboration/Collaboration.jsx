@@ -1,7 +1,7 @@
-import Button from "./Button";
-import Section from "./Section";
-import { check } from "../assets";
-import { collabContent, collabText } from "../constant";
+import Button from "../Button";
+import Section from "../Section";
+import { check } from "../../assets";
+import { collabContent, collabText } from "../../constant";
 import CollabCircle from "./CollabCircle";
 
 

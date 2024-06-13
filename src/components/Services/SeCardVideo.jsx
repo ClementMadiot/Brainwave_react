@@ -1,7 +1,6 @@
-import React from "react";
 import { brainwaveServicesIcons } from "../../constant";
 import { service3 } from "../../assets";
-import { VideoBar, VideoChatMessage } from "../design/Services";
+import { VideoBar, VideoChatMessage } from "./DesignServices";
 
 const SeCardVideo = () => {
   return (

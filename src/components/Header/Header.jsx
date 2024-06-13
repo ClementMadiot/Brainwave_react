@@ -2,11 +2,11 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-import { brainwave } from "../assets/index";
-import { navigation } from "../constant";
-import { HamburgerMenu } from "./design/Header";
-import Button from "./Button";
-import MenuSvg from "../assets/svg/MenuSvg";
+import { brainwave } from "../../assets/index";
+import { navigation } from "../../constant";
+import { HamburgerMenu } from "./DesignHeader";
+import Button from "../Button";
+import MenuSvg from "../../assets/svg/MenuSvg";
 
 const Header = () => {
   // pathName adds effect color on the select or unselected anchor in the navbar thanks to the condition below

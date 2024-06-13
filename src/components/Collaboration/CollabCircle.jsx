@@ -1,6 +1,6 @@
-import { brainwaveSymbol, check } from "../assets";
-import { collabApps } from "../constant";
-import { LeftCurve } from './design/Collaboration'
+import { brainwaveSymbol, check } from "../../assets";
+import { collabApps } from "../../constant";
+import { LeftCurve } from './Curve'
 
 const CollabCircle = () => {
   return (

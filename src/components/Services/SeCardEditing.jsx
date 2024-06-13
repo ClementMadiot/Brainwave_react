@@ -1,5 +1,5 @@
 import { service2 } from "../../assets/";
-import { PhotoChatMessage } from "../design/Services";
+import { PhotoChatMessage } from "./DesignServices";
 
 const SeCardEditing = ({ classesCard }) => {
   return (

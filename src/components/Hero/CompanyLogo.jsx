@@ -1,4 +1,4 @@
-import { companyLogos } from "../constant";
+import { companyLogos } from "../../constant";
 
 
 const CompanyLogo = ({ className }) => {

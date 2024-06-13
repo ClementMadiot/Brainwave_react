@@ -1,10 +1,10 @@
 // components
-import Heading from "./Heading";
-import Section from "./Section";
+import Heading from "../Heading";
+import Section from "../Section";
 // array
-import { benefits } from "../constant";
+import { benefits } from "../../constant";
 // assets
-import ClipPath from "../assets/svg/ClipPath";
+import ClipPath from "../../assets/svg/ClipPath";
 import BenefitsCard from "./BenefitsCard";
 
 const Benefits = () => {

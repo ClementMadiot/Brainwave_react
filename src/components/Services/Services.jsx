@@ -5,7 +5,7 @@ import SeCardVideo from "./SeCardVideo";
 // components
 import Heading from "../Heading";
 import Section from "../Section";
-import { Gradient } from "../design/Hero";
+import { Gradient } from "../Hero/DesignHero";
 
 const Services = () => {
   const classesCard =

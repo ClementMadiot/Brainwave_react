@@ -1,7 +1,7 @@
 //SVG
-import Arrow from "../assets/svg/Arrow";
+import Arrow from "../../assets/svg/Arrow";
 // design
-import { GradientLight } from "./design/Benefits";
+import { GradientLight } from "./GradientLight";
 
 const BenefitsCard = ({ item }) => {
   return (
