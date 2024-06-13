@@ -43,7 +43,7 @@ const CollabCircle = () => {
               ))}
             </ul>
             <LeftCurve className=" z-0"/>
-          </article>
+    </article>
   );
 };
 
