@@ -3,11 +3,9 @@ import Heading from "./Heading";
 import Section from "./Section";
 // array
 import { benefits } from "../constant";
-// design
-import { GradientLight } from "./design/Benefits";
 // assets
-import Arrow from "../assets/svg/Arrow";
-import ClipPath from "../assets/svg/ClipPath"
+import ClipPath from "../assets/svg/ClipPath";
+import BenefitsCard from "./BenefitsCard";
 
 const Benefits = () => {
   return (
@@ -24,22 +22,7 @@ const Benefits = () => {
               style={{ backgroundImage: `url(${item.backgroundUrl})` }}
               key={item.id}
             >
-              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-                <h5 className="h5 mb-5">{item.title}</h5>
-                <p className="body-2 mb-6 text-n-3">{item.text}</p>
-                <div className="flex items-center mt-auto">
-                  <img
-                    src={item.iconUrl}
-                    width={48}
-                    height={48}
-                    alt={item.title}
-                  />
-                  <button className="flex items-center ml-auto font-code text-sm font-bold text-n-1 uppercase tracking-wider pointer-events-auto ">explore more <Arrow /></button>
-                </div>
-              </div>
-
-              {item.light && <GradientLight />}
-
+              <BenefitsCard item={item} />
               <div
                 className="absolute inset-0.5 bg-n-8"
                 style={{ clipPath: "url(#benefits)" }}
@@ -55,7 +38,7 @@ const Benefits = () => {
                   )}
                 </div>
               </div>
-              <ClipPath/>
+              <ClipPath />
             </article>
           ))}
         </div>

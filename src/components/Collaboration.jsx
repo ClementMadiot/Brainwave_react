@@ -1,8 +1,9 @@
-import { brainwaveSymbol, check } from "../assets";
-import { collabApps, collabContent, collabText } from "../constant";
 import Button from "./Button";
 import Section from "./Section";
-import { LeftCurve, RightCurve } from './design/Collaboration'
+import { check } from "../assets";
+import { collabContent, collabText } from "../constant";
+import CollabCircle from "./CollabCircle";
+
 
 const Collaboration = () => {
   return (
@@ -26,55 +27,14 @@ const Collaboration = () => {
             ))}
           </ul>
 
-          <Button>Try it now</Button>
+          <Button className="z-50 bg-n-8">Try it now</Button>
         </article>
 
         <article className="lg:ml-auto xl:w-[38rem] mt-4">
           <p className="body-2 text-n-4 mb-12 md:mb-16 lg:mb-28 lg:w-[22rem] lg:mx-auto">
             {collabText}
           </p>
-
-          <article className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
-            <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
-              <div className="w-24 aspect-square m-auto border p-[0.2rem] bg-conic-gradient rounded-full">
-                <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
-                  <img
-                    src={brainwaveSymbol}
-                    alt="brainwave"
-                    width={48}
-                    height={48}
-                  />
-                </div>
-              </div>
-            </div>
-
-            <ul>
-              {collabApps.map((app, index) => (
-                <li
-                  key={app.id}
-                  className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${
-                    index * 45
-                  }`}
-                >
-                  <div
-                    className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-2xl -rotate-${
-                      index * 45
-                    }`}
-                  >
-                    <img
-                      className="m-auto"
-                      width={app.width}
-                      height={app.height}
-                      src={app.icon}
-                      alt={app.title}
-                    />
-                  </div>
-                </li>
-              ))}
-            </ul>
-            <LeftCurve/>
-            <RightCurve/>
-          </article>
+            <CollabCircle/>          
         </article>
       </section>
     </Section>
