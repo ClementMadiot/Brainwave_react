@@ -1,5 +1,7 @@
 import React from "react";
 import { brainwaveServicesIcons } from "../../constant";
+import { service3 } from "../../assets";
+import { VideoBar, VideoChatMessage } from "../design/Services";
 
 const SeCardVideo = () => {
   return (
@@ -10,6 +12,7 @@ const SeCardVideo = () => {
           The world's most powerful AI photo and video art generation engine.
           What will you create?
         </p>
+        {/* icons  */}
         <ul className="flex items-center justify-between">
           {brainwaveServicesIcons.map((item, index) => (
             <li
@@ -32,6 +35,18 @@ const SeCardVideo = () => {
             </li>
           ))}
         </ul>
+      </div>
+
+      <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
+        <img
+          src={service3}
+          alt="scary robot"
+          className="w-full h-full object-cover"
+          width={520}
+          height={400}
+        />
+        <VideoChatMessage />
+        <VideoBar />
       </div>
     </div>
   );

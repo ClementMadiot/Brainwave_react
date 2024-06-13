@@ -5,6 +5,7 @@ import SeCardVideo from "./SeCardVideo";
 // components
 import Heading from "../Heading";
 import Section from "../Section";
+import { Gradient } from "../design/Hero";
 
 const Services = () => {
   const classesCard =
@@ -24,6 +25,7 @@ const Services = () => {
             <SeCardEditing classesCard={classesCard}/>
             <SeCardVideo/>
           </article>
+          <Gradient/>
         </div>
       </div>
     </Section>
