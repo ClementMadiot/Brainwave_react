@@ -7,7 +7,7 @@ import { LeftLine, RightLine } from "./DesignLine";
 
 const Pricing = () => {
   return (
-    <Section id="pricing" className="overflow-hidden">
+    <Section id="price" className="overflow-hidden">
       <div className="container relative z-2">
         <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
           <img
