@@ -1,4 +1,4 @@
-import { brainwaveSymbol, check } from "../../assets";
+import { brainwaveSymbol } from "../../assets";
 import { collabApps } from "../../constant";
 import { LeftCurve } from './Curve'
 
