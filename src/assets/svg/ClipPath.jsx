@@ -9,3 +9,4 @@ const ClipPath = () => {
 };
 
 export default ClipPath;
+  

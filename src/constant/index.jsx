@@ -7,13 +7,10 @@ import {
   chromecast,
   disc02,
   discord,
-  discordBlack,
-  facebook,
   figma,
   file02,
   framer,
   homeSmile,
-  instagram,
   notification2,
   notification3,
   notification4,
@@ -31,10 +28,16 @@ import {
   searchMd,
   slack,
   sliders04,
-  telegram,
-  twitter,
   yourlogo,
 } from "../assets";
+
+import {
+  IoLogoInstagram,
+  IoLogoDiscord,
+  IoLogoTwitter,
+  IoLogoFacebook,
+} from "react-icons/io5";
+import { FaTelegramPlane } from "react-icons/fa";
 
 export const navigation = [
   {
@@ -249,7 +252,7 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
-    hover: 'hover:text-color-1',
+    hover: "hover:text-color-1",
   },
   {
     id: "1",
@@ -258,7 +261,7 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
-    hover: 'hover:text-color-2',
+    hover: "hover:text-color-2",
     light: true,
   },
   {
@@ -268,7 +271,7 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
-    hover: 'hover:text-color-4',
+    hover: "hover:text-color-4",
   },
   {
     id: "3",
@@ -277,7 +280,7 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
-    hover: 'hover:text-color-3',
+    hover: "hover:text-color-3",
     light: true,
   },
   {
@@ -287,7 +290,7 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
-    hover: 'hover:text-color-1',
+    hover: "hover:text-color-1",
   },
   {
     id: "5",
@@ -296,39 +299,41 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
-    hover: 'hover:text-color-2',
+    hover: "hover:text-color-2",
   },
 ];
+
+const socialsClasses = ' w-[23px] h-[23px]'
 
 export const socials = [
   {
     id: "0",
     title: "Discord",
-    iconUrl: discordBlack,
     url: "#",
+    icon: <IoLogoDiscord className={socialsClasses}/>,
   },
   {
     id: "1",
     title: "Twitter",
-    iconUrl: twitter,
+    icon: <IoLogoTwitter className={socialsClasses} />,
     url: "#",
   },
   {
     id: "2",
     title: "Instagram",
-    iconUrl: instagram,
+    icon: <IoLogoInstagram className={socialsClasses} />,
     url: "#",
   },
   {
     id: "3",
     title: "Telegram",
-    iconUrl: telegram,
+    icon: <FaTelegramPlane className={`${socialsClasses} mr-1`} />,
     url: "#",
   },
   {
     id: "4",
     title: "Facebook",
-    iconUrl: facebook,
+    icon: <IoLogoFacebook className={socialsClasses} />,
     url: "#",
   },
 ];
