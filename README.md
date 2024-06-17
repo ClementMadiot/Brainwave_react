@@ -1,3 +1,19 @@
+# Brainwave react app using TailwindCSS
+This web site prosose to explore the Possibilities of AI Chatting
+
+# Library used
+- [scroll-lock](https://www.npmjs.com/package/scroll-lock) :
+Cross-browser JavaScript library to disable scrolling page
+
+- [react-just-parallax](https://www.npmjs.com/package/react-just-parallax) :
+React library for scroll and mousemove parallax effect ✨
+Open source, production-ready
+
+- [react-icon](https://www.npmjs.com/package/react-icons)
+Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
+
+- [TailwindCSS](https://tailwindcss.com/docs/installation)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
