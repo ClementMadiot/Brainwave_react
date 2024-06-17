@@ -12,6 +12,9 @@ Open source, production-ready
 - [react-icon](https://www.npmjs.com/package/react-icons)
 Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
 
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+- The react-router-dom package contains bindings for using React Router in web applications. Please see the Getting Started guide for more information on how to get started with React Router.
+  
 - [TailwindCSS](https://tailwindcss.com/docs/installation)
 
 # React + Vite
