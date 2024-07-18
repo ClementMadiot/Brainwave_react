@@ -45,7 +45,7 @@ git clone {git remote URL}
 
 > Once the dependencies are installed, start the project with the command `npm run dev`.
 
-## <br /> <a name="launch-app">🚀 Styling</a>
+## <br /> <a name="launch-app">🎨 Styling</a>
 
 Global styling are defined using TailwindCSS in the tailwind.config.js file.
 
